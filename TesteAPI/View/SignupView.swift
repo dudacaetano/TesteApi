@@ -60,7 +60,7 @@ struct SignupView: View {
                 }
                 
                 NavigationLink(destination: HomeView(), isActive: $navigateToHome){
-                    HomeView()
+                    EmptyView()
                 }
             }
             .navigationBarHidden(true)

@@ -4,30 +4,42 @@
 //
 //  Created by Maria Eduarda on 23/08/24.
 //
-
 import Foundation
 
-
-
-/*final class UserViewModel: ObservableObject{
+final class UserViewModel: ObservableObject {
     
-    @Published private var users = [User]()
+    @Published var users: [User] = []
     
     func fetchUsers() async {
-        guard let url = URL(string "") else {
-            print("This URL not working")
-            return
-        }
+        let usersUrlString = "http://127.0.0.1:8080/users"
         
-        do{
-            let (data, _) = try await URLSession.shared.data(from:url)
-            if let decodeResponse = try? JSONDecoder().decode([User].self, from: data){
-                users = decodeResponse
-            }
-        } catch{
-            print("These data are not valid")
+        if let url = URL(string: usersUrlString) {
+            URLSession.shared.dataTask(with: url) { data, response, error in
+                // Handle returning data in the Main thread
+                DispatchQueue.main.async {
+                    if let error = error {
+                        // Handle error
+                        print("Error fetching users: \(error.localizedDescription)")
+                    } else {
+                        let decoder = JSONDecoder()
+                        decoder.keyDecodingStrategy = .convertFromSnakeCase // Handle properties that look like first_name > firstName
+                        
+                        if let data = data,
+                           let users = try? decoder.decode([User].self, from: data) {
+                            // Setting the data
+                            self.users = users
+                        } else {
+                            // Handle error
+                            print("Failed to decode users")
+                        }
+                    }
+                }
+            }.resume()
+        } else {
+            // Handle error
+            print("Invalid URL")
         }
-        
     }
 }
- */
+
+ 
