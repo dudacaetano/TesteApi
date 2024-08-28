@@ -9,8 +9,9 @@ import Foundation
 
 //resposta da API após uma tentiva de login
 
-struct AuthResponse: Codable{
-    let success: Bool
-    let user: User?
-    let message: String?
+
+
+struct AuthResponse: Codable {
+    let token: String
+    let user: User
 }

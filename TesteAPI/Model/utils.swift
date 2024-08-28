@@ -10,7 +10,7 @@ import Foundation
 
 struct User: Codable{
     
-    let id : UUID
+    let id : UUID?
     let name: String
     let username: String
     let avatar: String?
