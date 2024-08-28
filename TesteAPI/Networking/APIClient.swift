@@ -11,7 +11,7 @@ import Foundation
 // classes responsáveis por  gerenciar a comunicaçao com a API
 //lida com as requisições  e respostas da API
 
-
+/*
 class APIClient{
     func send(_ request: URLRequest, completion: @escaping (Result<Data, Error>) -> Void){
         let task = URLSession.shared.dataTask(with: request) {data, response, error in
@@ -32,3 +32,4 @@ class APIClient{
         task.resume()
     }
 }
+*/
