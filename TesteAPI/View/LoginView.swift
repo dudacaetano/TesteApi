@@ -9,7 +9,7 @@ import SwiftUI
 
 struct loginView: View {
     
-    @StateObject private var ViewModel = AuthViewModel()
+//    @StateObject private var ViewModel = AuthViewModel()
     
     @State private var username = ""
     @State private var password = ""
@@ -54,19 +54,28 @@ struct loginView: View {
                         .cornerRadius(10)
                     
                     Button("Login"){
+                        Task {
+                            do {
+                                let token = try await API.login(username: username, password: password)
+                                print(token)
+                            } catch {
+                                print(error)
+                            }
+                        }
                         //Authenticate user
-                        ViewModel.login(username: username, password: password)
+//                        ViewModel.login(username: username, password: password)
                     }
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
                     .background(Color.blue)
                     .cornerRadius(10)
                     
-                    if let errorMessage = ViewModel.errorMessage{
-                        Text(errorMessage)
-                            .foregroundColor(.red)
-                    }
+//                    if let errorMessage = ViewModel.errorMessage{
+//                        Text(errorMessage)
+//                            .foregroundColor(.red)
+//                    }
                 }
+                
             }
             .navigationBarHidden(true)
         }

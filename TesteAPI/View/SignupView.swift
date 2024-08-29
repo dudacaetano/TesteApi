@@ -5,11 +5,12 @@
 //  Created by Maria Eduarda on 22/08/24.
 //
 
+
 import SwiftUI
 
 struct SignupView: View {
     
-    @StateObject private var viewModel = AuthViewModel()
+//    @StateObject private var viewModel = AuthViewModel()
     
     @State private var username = ""
     @State private var name = ""
@@ -67,14 +68,21 @@ struct SignupView: View {
         
                     
                     CustomButtonLogin(title:"Sign Up"){
-                        viewModel.register(name: name, username: username, password: password)
+                        Task {
+                            do {
+                                let token = try await API.registerUser(name: name, username: username, password: password)
+                                print(token)
+                            } catch {
+                                print(error)
+                            }
+                        }
                     }
                     .padding()
                     
-                    if let errorMessage = viewModel.errorMessage{
-                        Text(errorMessage)
-                            .foregroundColor(.red)
-                    }
+//                    if let errorMessage = viewModel.errorMessage{
+//                        Text(errorMessage)
+//                            .foregroundColor(.red)
+//                    }
                 }
                 
                 
@@ -82,6 +90,7 @@ struct SignupView: View {
             .navigationBarHidden(true)
         }
     }
+    
 }
 #Preview {
     SignupView()

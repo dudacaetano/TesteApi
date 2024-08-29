@@ -8,8 +8,14 @@
 
 import Foundation
 
+/*
 enum APIError: Error {
     case invalidURL
     case requestFailed
     case decodingFailed
+}
+*/
+
+enum APIError: Error {
+    case apiError(code: Int, body: Data?)
 }
