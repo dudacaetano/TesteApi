@@ -10,6 +10,7 @@ import Foundation
 
 // possiveis erros de rede 
 
+/*
 enum NetworkError: Error{
     
     case invalidURL
@@ -18,3 +19,4 @@ enum NetworkError: Error{
     case serverError(String)
     
 }
+*/

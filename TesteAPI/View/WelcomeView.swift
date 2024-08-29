@@ -8,50 +8,48 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    
+    @State private var navigateToHome = false
+    
     var body: some View {
         
-        ZStack{
-            Color.blue
-                .ignoresSafeArea()
-            Circle()
-                .scale(1.7)
-                .foregroundColor(.white.opacity(0.15))
-            Circle()
-                .scale(1.35)
-                .foregroundColor(.white)
+        NavigationStack{
             
-            VStack {
-                Image(systemName: "bicycle")
-                    .resizable()
-                    .frame(width: 120, height: 100)
-                    .foregroundColor(.blue.opacity(0.8))
+            ZStack{
+                Color.blue
+                    .ignoresSafeArea()
+                Circle()
+                    .scale(1.7)
+                    .foregroundColor(.white.opacity(0.15))
+                Circle()
+                    .scale(1.35)
+                    .foregroundColor(.white)
                 
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation")
-                    .multilineTextAlignment(.center)
-                    .padding()
-                     
-                
-                Button("Login"){
-                    //Authenticate user
+                VStack {
+                    Image(systemName: "bicycle")
+                        .resizable()
+                        .frame(width: 120, height: 100)
+                        .foregroundColor(.blue.opacity(0.8))
+                    
+                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation")
+                        .multilineTextAlignment(.center)
+                        .padding()
+                    
+                    CustomButtonLogin(title: "Login"){
+                        navigateToHome = true
+                    }
+                    NavigationLink(destination: loginView(), isActive: $navigateToHome){}
+                    
+                    
+                    CustomButtonSignup(title: "Sign Up"){
+                        navigateToHome = true
+                    }
+                    NavigationLink(destination: SignupView(), isActive: $navigateToHome){}
                 }
-                .foregroundColor(.white)
-                .frame(width: 300, height: 50)
-                .background(Color.blue)
-                .cornerRadius(10)
                 
-                Button("Sign Up "){
-                    //Authenticate user
-                }
-                .foregroundColor(.white)
-                .frame(width: 300, height: 50)
-                .background(Color.gray.opacity(0.5))
-                .cornerRadius(10)
             }
-            
-            
-            
+            .navigationBarHidden(true)
         }
-        .navigationBarHidden(true)
        
     }
 }

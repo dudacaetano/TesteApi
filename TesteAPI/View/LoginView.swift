@@ -9,6 +9,8 @@ import SwiftUI
 
 struct loginView: View {
     
+//    @StateObject private var ViewModel = AuthViewModel()
+    
     @State private var username = ""
     @State private var password = ""
     @State private var wrongUsername = 0
@@ -52,37 +54,33 @@ struct loginView: View {
                         .cornerRadius(10)
                     
                     Button("Login"){
+                        Task {
+                            do {
+                                let token = try await API.login(username: username, password: password)
+                                print(token)
+                            } catch {
+                                print(error)
+                            }
+                        }
                         //Authenticate user
-                        authenticateUser(username: username, password: password)
+//                        ViewModel.login(username: username, password: password)
                     }
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
                     .background(Color.blue)
                     .cornerRadius(10)
                     
-                    NavigationLink(destination: Text("You are logged in @\(username)"), isActive: $showingLoginScreen) {
-                        EmptyView()
-                    }
+//                    if let errorMessage = ViewModel.errorMessage{
+//                        Text(errorMessage)
+//                            .foregroundColor(.red)
+//                    }
                 }
+                
             }
             .navigationBarHidden(true)
         }
     }
-    func authenticateUser(username: String, password:String){
-        if username.lowercased() == "mario2021"{
-            wrongUsername = 0
-            
-            if password.lowercased() == "abc123" {
-                wrongPassword = 0
-                showingLoginScreen = true
-            }else {
-                wrongPassword = 2
-            }
-        }
-        else {
-            wrongUsername = 2
-        }
-    }
+    
 }
 
 #Preview {
