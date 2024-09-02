@@ -15,68 +15,80 @@ struct loginView: View {
     @State private var password = ""
     @State private var wrongUsername = 0
     @State private var wrongPassword = 0
-    @State private var showingLoginScreen = false
+    
+    @State private var showingHomeView = false
     
     var body: some View {
         NavigationView{
             ZStack {
-                Color.blue
+                
+                LinearGradient(colors:[.black, .white], startPoint: . topLeading, endPoint: .bottomTrailing)
+                
+             
+              /*  Color.red
                     .ignoresSafeArea()
                 Circle()
                     .scale(1.7)
-                    .foregroundColor(.white.opacity(0.15))
+                    .foregroundColor(.black)
                 Circle()
                     .scale(1.35)
-                    .foregroundColor(.white)
+                    .foregroundColor(.white)   */
                 
                 VStack{
                     Image(systemName: "bicycle")
                         .resizable()
                         .frame(width: 120, height: 100)
-                        .foregroundColor(.blue.opacity(0.8))
+                        .foregroundColor(.white)
                     
-                    Text("Login")
-                        .font(.title3)
-                        .bold()
-                        .padding()
+                    HStack{
+                        Text("Flip")
+                            .font(.largeTitle)
+                            .foregroundColor(.red)
+                            .bold()
+                            .italic()
+                        Text("Flop")
+                            .font(.largeTitle)
+                            .foregroundColor(.black)
+                            .italic()                    }
+
                     
                     TextField("Username", text: $username)
                         .padding()
                         .frame(width: 300, height: 50)
-                        .background(Color.black.opacity(0.05))
+                        .background(RoundedRectangle(cornerRadius: 5) 
+                            .stroke(Color.black))
                         .cornerRadius(10)
                         .border(.red, width: CGFloat(wrongPassword))
                     
                     SecureField("Password", text: $password)
                         .padding()
                         .frame(width: 300, height: 50)
-                        .background(Color.black.opacity(0.05))
+                        .background(RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color.black))
                         .cornerRadius(10)
                     
-                    Button("Login"){
-                        Task {
-                            do {
-                                let token = try await API.login(username: username, password: password)
-                                print(token)
-                            } catch {
-                                print(error)
+                    NavigationLink(destination: HomeView(), isActive: $showingHomeView){
+                        
+                        CustomButtonLogin(title: "Login"){
+                            Task {
+                                do {
+                                    let token = try await API.login(username: username, password: password)
+                                    print(token)
+                                    
+                                    showingHomeView = true
+                                } catch {
+                                    print(error)
+                                }
                             }
+                            
                         }
-                        //Authenticate user
-//                        ViewModel.login(username: username, password: password)
+                        .padding()
                     }
-                    .foregroundColor(.white)
-                    .frame(width: 300, height: 50)
-                    .background(Color.blue)
-                    .cornerRadius(10)
                     
-//                    if let errorMessage = ViewModel.errorMessage{
-//                        Text(errorMessage)
-//                            .foregroundColor(.red)
-//                    }
                 }
                 
             }
+            .edgesIgnoringSafeArea(.all)
             .navigationBarHidden(true)
         }
     }
