@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		355272B42C81E8CE00FDC8DE /* TaskPerfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272B32C81E8CE00FDC8DE /* TaskPerfil.swift */; };
+		355272B62C81E96200FDC8DE /* FollowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272B52C81E96200FDC8DE /* FollowButton.swift */; };
+		355272B82C81E9B400FDC8DE /* ChatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272B72C81E9B400FDC8DE /* ChatButton.swift */; };
+		355272BA2C81EB0D00FDC8DE /* FeedGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272B92C81EB0D00FDC8DE /* FeedGrid.swift */; };
+		355272BC2C81EB4800FDC8DE /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272BB2C81EB4800FDC8DE /* PerfilView.swift */; };
+		355272BE2C81EBE100FDC8DE /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272BD2C81EBE100FDC8DE /* PostView.swift */; };
+		355272C02C81EC6500FDC8DE /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272BF2C81EC6500FDC8DE /* UserInfo.swift */; };
 		4C2B0E782C7FC5DA005F124B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B0E772C7FC5DA005F124B /* User.swift */; };
 		4C5D281F2C809C7000EA797F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D281E2C809C7000EA797F /* Session.swift */; };
 		4C5D28212C809C8400EA797F /* UserCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D28202C809C8400EA797F /* UserCreate.swift */; };
@@ -32,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		355272B32C81E8CE00FDC8DE /* TaskPerfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPerfil.swift; sourceTree = "<group>"; };
+		355272B52C81E96200FDC8DE /* FollowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowButton.swift; sourceTree = "<group>"; };
+		355272B72C81E9B400FDC8DE /* ChatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatButton.swift; sourceTree = "<group>"; };
+		355272B92C81EB0D00FDC8DE /* FeedGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedGrid.swift; sourceTree = "<group>"; };
+		355272BB2C81EB4800FDC8DE /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
+		355272BD2C81EBE100FDC8DE /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		355272BF2C81EC6500FDC8DE /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		4C2B0E772C7FC5DA005F124B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4C5D281E2C809C7000EA797F /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		4C5D28202C809C8400EA797F /* UserCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreate.swift; sourceTree = "<group>"; };
@@ -78,6 +92,8 @@
 				4C5D28222C80B81D00EA797F /* TestView.swift */,
 				4C5D28242C80B82C00EA797F /* TestView2.swift */,
 				4C5D28262C80BDC200EA797F /* splashScreen.swift */,
+				355272BB2C81EB4800FDC8DE /* PerfilView.swift */,
+				355272BD2C81EBE100FDC8DE /* PostView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -103,6 +119,10 @@
 			children = (
 				4C5DCA0B2C7CC97D00F68D9F /* CustomButton.swift */,
 				4C5DCA0F2C7CCA5C00F68D9F /* CustomTextField.swift */,
+				355272B52C81E96200FDC8DE /* FollowButton.swift */,
+				355272B72C81E9B400FDC8DE /* ChatButton.swift */,
+				355272B92C81EB0D00FDC8DE /* FeedGrid.swift */,
+				355272BF2C81EC6500FDC8DE /* UserInfo.swift */,
 			);
 			path = ComponentesUI;
 			sourceTree = "<group>";
@@ -135,6 +155,7 @@
 				4C5DC9F12C7CB2B000F68D9F /* Networking */,
 				4CFD0E452C77744D00F793B9 /* TesteAPIApp.swift */,
 				4CFD0E472C77744D00F793B9 /* ContentView.swift */,
+				355272B32C81E8CE00FDC8DE /* TaskPerfil.swift */,
 				4CFD0E492C77744E00F793B9 /* Assets.xcassets */,
 				4CFD0E4B2C77744E00F793B9 /* Preview Content */,
 			);
@@ -251,6 +272,9 @@
 				4C5DC9FF2C7CB4DA00F68D9F /* NetworkError.swift in Sources */,
 				4C5D281F2C809C7000EA797F /* Session.swift in Sources */,
 				4C5DC9FB2C7CB45B00F68D9F /* AuthServices.swift in Sources */,
+				355272B82C81E9B400FDC8DE /* ChatButton.swift in Sources */,
+				355272C02C81EC6500FDC8DE /* UserInfo.swift in Sources */,
+				355272BC2C81EB4800FDC8DE /* PerfilView.swift in Sources */,
 				4CFD0E6E2C77B5C200F793B9 /* HomeView.swift in Sources */,
 				4CFD0E482C77744D00F793B9 /* ContentView.swift in Sources */,
 				4C6E17362C7EA5790044A4BF /* AuthViewModel.swift in Sources */,
@@ -258,13 +282,17 @@
 				4CFD0E462C77744D00F793B9 /* TesteAPIApp.swift in Sources */,
 				4C5D28252C80B82C00EA797F /* TestView2.swift in Sources */,
 				4CFD0E702C77BAF900F793B9 /* WelcomeView.swift in Sources */,
+				355272B42C81E8CE00FDC8DE /* TaskPerfil.swift in Sources */,
 				4C5DCA102C7CCA5C00F68D9F /* CustomTextField.swift in Sources */,
 				4C5DCA0C2C7CC97D00F68D9F /* CustomButton.swift in Sources */,
 				4C5DC9F92C7CB41F00F68D9F /* APIService.swift in Sources */,
+				355272BE2C81EBE100FDC8DE /* PostView.swift in Sources */,
+				355272B62C81E96200FDC8DE /* FollowButton.swift in Sources */,
 				4C6E17382C7EA61D0044A4BF /* APIError.swift in Sources */,
 				4C5DCA072C7CB5C700F68D9F /* keychainManager.swift in Sources */,
 				4C5D28212C809C8400EA797F /* UserCreate.swift in Sources */,
 				4CFD0E762C77C26600F793B9 /* LoginView.swift in Sources */,
+				355272BA2C81EB0D00FDC8DE /* FeedGrid.swift in Sources */,
 				4CFD0E742C77C22A00F793B9 /* SignupView.swift in Sources */,
 				4C2B0E782C7FC5DA005F124B /* User.swift in Sources */,
 			);
