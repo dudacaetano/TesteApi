@@ -7,28 +7,22 @@
 
 import SwiftUI
 
-struct ChatButton: View {
+struct LogoutButton: View {
     var body: some View {
         Button{
            // acao
         } label: {
-            Image(systemName: "message")
+            Image(systemName: "rectangle.portrait.and.arrow.forward")
                 .foregroundStyle(.symbols)
-            Text("Chat")
-                .fontWeight(.medium)
-                .foregroundStyle(.symbols)
-        }
-        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-
-        
+        }        
         //Button style here
+        .controlSize(.small)
         .padding(10)
         .background(.button)
         .cornerRadius(7)
-        .controlSize(.small)
     }
 }
 
 #Preview {
-    ChatButton()
+    LogoutButton()
 }

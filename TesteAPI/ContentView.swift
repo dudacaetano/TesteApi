@@ -16,7 +16,7 @@ struct ContentView: View {
                 }
                 .padding()
 
-                NavigationLink(destination: loginView()) {
+                NavigationLink(destination: LoginViewUI()) {
                     Text("Go to Login")
                 }
                 .padding()
