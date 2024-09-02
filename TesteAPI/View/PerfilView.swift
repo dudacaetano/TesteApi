@@ -19,7 +19,7 @@ struct PerfilView: View {
                 
                 VStack{
                     UserInfo()
-                        .padding([.bottom], 30)
+                        .padding([.bottom], 15)
                     
                     Picker(selection: $selected, label: Text("Picker"), content: {
                         Text("Feed")

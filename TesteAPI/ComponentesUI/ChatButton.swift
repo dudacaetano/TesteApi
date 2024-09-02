@@ -18,12 +18,14 @@ struct ChatButton: View {
                 .fontWeight(.medium)
                 .foregroundStyle(.symbols)
         }
+        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+
         
         //Button style here
-        .controlSize(.small)
         .padding(10)
         .background(.button)
         .cornerRadius(7)
+        .controlSize(.small)
     }
 }
 
