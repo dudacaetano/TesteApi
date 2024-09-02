@@ -16,6 +16,8 @@
 		355272BC2C81EB4800FDC8DE /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272BB2C81EB4800FDC8DE /* PerfilView.swift */; };
 		355272BE2C81EBE100FDC8DE /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272BD2C81EBE100FDC8DE /* PostView.swift */; };
 		355272C02C81EC6500FDC8DE /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272BF2C81EC6500FDC8DE /* UserInfo.swift */; };
+		356697642C85EBB300AB31DE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356697622C85EBB300AB31DE /* LoginView.swift */; };
+		356697652C85EBB300AB31DE /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356697632C85EBB300AB31DE /* WelcomeView.swift */; };
 		35E20FEC2C83BD4400029E48 /* LoginViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E20FEB2C83BD4400029E48 /* LoginViewUI.swift */; };
 		35F487AA2C83556600B6E1FC /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F487A92C83556600B6E1FC /* LogoutButton.swift */; };
 		35F487AC2C8364F800B6E1FC /* WelcomeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F487AB2C8364F800B6E1FC /* WelcomeAnimation.swift */; };
@@ -23,6 +25,9 @@
 		4C2B0E782C7FC5DA005F124B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B0E772C7FC5DA005F124B /* User.swift */; };
 		4C5D281F2C809C7000EA797F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D281E2C809C7000EA797F /* Session.swift */; };
 		4C5D28212C809C8400EA797F /* UserCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D28202C809C8400EA797F /* UserCreate.swift */; };
+		4C5D28232C80B81D00EA797F /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D28222C80B81D00EA797F /* TestView.swift */; };
+		4C5D28252C80B82C00EA797F /* TestView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D28242C80B82C00EA797F /* TestView2.swift */; };
+		4C5D28272C80BDC200EA797F /* splashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D28262C80BDC200EA797F /* splashScreen.swift */; };
 		4C5DC9F92C7CB41F00F68D9F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DC9F82C7CB41F00F68D9F /* APIService.swift */; };
 		4C5DC9FB2C7CB45B00F68D9F /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DC9FA2C7CB45B00F68D9F /* AuthServices.swift */; };
 		4C5DC9FF2C7CB4DA00F68D9F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DC9FE2C7CB4DA00F68D9F /* NetworkError.swift */; };
@@ -49,6 +54,8 @@
 		355272BB2C81EB4800FDC8DE /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
 		355272BD2C81EBE100FDC8DE /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		355272BF2C81EC6500FDC8DE /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		356697622C85EBB300AB31DE /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		356697632C85EBB300AB31DE /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		35E20FEB2C83BD4400029E48 /* LoginViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewUI.swift; sourceTree = "<group>"; };
 		35F487A92C83556600B6E1FC /* LogoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButton.swift; sourceTree = "<group>"; };
 		35F487AB2C8364F800B6E1FC /* WelcomeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeAnimation.swift; sourceTree = "<group>"; };
@@ -56,6 +63,9 @@
 		4C2B0E772C7FC5DA005F124B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4C5D281E2C809C7000EA797F /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		4C5D28202C809C8400EA797F /* UserCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreate.swift; sourceTree = "<group>"; };
+		4C5D28222C80B81D00EA797F /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		4C5D28242C80B82C00EA797F /* TestView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView2.swift; sourceTree = "<group>"; };
+		4C5D28262C80BDC200EA797F /* splashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashScreen.swift; sourceTree = "<group>"; };
 		4C5DC9F82C7CB41F00F68D9F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		4C5DC9FA2C7CB45B00F68D9F /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		4C5DC9FE2C7CB4DA00F68D9F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -87,8 +97,13 @@
 		4C5DC9F02C7CB24700F68D9F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				356697622C85EBB300AB31DE /* LoginView.swift */,
+				356697632C85EBB300AB31DE /* WelcomeView.swift */,
 				4CFD0E732C77C22A00F793B9 /* SignupView.swift */,
 				4CFD0E6D2C77B5C200F793B9 /* HomeView.swift */,
+				4C5D28222C80B81D00EA797F /* TestView.swift */,
+				4C5D28242C80B82C00EA797F /* TestView2.swift */,
+				4C5D28262C80BDC200EA797F /* splashScreen.swift */,
 				355272BB2C81EB4800FDC8DE /* PerfilView.swift */,
 				35F487AB2C8364F800B6E1FC /* WelcomeAnimation.swift */,
 				353E56F52C84F4DA00FA5283 /* OnboardView.swift */,
@@ -271,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5D28272C80BDC200EA797F /* splashScreen.swift in Sources */,
 				4C5DC9FF2C7CB4DA00F68D9F /* NetworkError.swift in Sources */,
 				35F487AA2C83556600B6E1FC /* LogoutButton.swift in Sources */,
 				4C5D281F2C809C7000EA797F /* Session.swift in Sources */,
@@ -284,7 +300,9 @@
 				4CFD0E482C77744D00F793B9 /* ContentView.swift in Sources */,
 				35E20FEC2C83BD4400029E48 /* LoginViewUI.swift in Sources */,
 				4C6E17362C7EA5790044A4BF /* AuthViewModel.swift in Sources */,
+				4C5D28232C80B81D00EA797F /* TestView.swift in Sources */,
 				4CFD0E462C77744D00F793B9 /* TesteAPIApp.swift in Sources */,
+				4C5D28252C80B82C00EA797F /* TestView2.swift in Sources */,
 				35F487AC2C8364F800B6E1FC /* WelcomeAnimation.swift in Sources */,
 				355272B42C81E8CE00FDC8DE /* TaskPerfil.swift in Sources */,
 				4C5DCA102C7CCA5C00F68D9F /* CustomTextField.swift in Sources */,
@@ -296,8 +314,10 @@
 				4C6E17382C7EA61D0044A4BF /* APIError.swift in Sources */,
 				4C5DCA072C7CB5C700F68D9F /* keychainManager.swift in Sources */,
 				4C5D28212C809C8400EA797F /* UserCreate.swift in Sources */,
+				356697652C85EBB300AB31DE /* WelcomeView.swift in Sources */,
 				355272BA2C81EB0D00FDC8DE /* FeedGrid.swift in Sources */,
 				4CFD0E742C77C22A00F793B9 /* SignupView.swift in Sources */,
+				356697642C85EBB300AB31DE /* LoginView.swift in Sources */,
 				4C2B0E782C7FC5DA005F124B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

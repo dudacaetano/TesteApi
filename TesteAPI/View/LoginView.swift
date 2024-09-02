@@ -1,30 +1,38 @@
 //
-//  SignupView.swift
+//  loginView.swift
 //  TesteAPI
 //
 //  Created by Maria Eduarda on 22/08/24.
 //
 
-
 import SwiftUI
 
-struct SignupView: View {
+struct loginView: View {
     
-//    @StateObject private var viewModel = AuthViewModel()
+//    @StateObject private var ViewModel = AuthViewModel()
     
     @State private var username = ""
-    @State private var name = ""
     @State private var password = ""
     @State private var wrongUsername = 0
     @State private var wrongPassword = 0
+    
     @State private var showingHomeView = false
     
     var body: some View {
-        NavigationStack{
-            ZStack{
-                
+        NavigationView{
+            ZStack {
                 
                 LinearGradient(colors:[.black, .white], startPoint: . topLeading, endPoint: .bottomTrailing)
+                
+             
+              /*  Color.red
+                    .ignoresSafeArea()
+                Circle()
+                    .scale(1.7)
+                    .foregroundColor(.black)
+                Circle()
+                    .scale(1.35)
+                    .foregroundColor(.white)   */
                 
                 VStack{
                     Image(systemName: "bicycle")
@@ -42,38 +50,29 @@ struct SignupView: View {
                             .font(.largeTitle)
                             .foregroundColor(.black)
                             .italic()                    }
-                    
+
                     
                     TextField("Username", text: $username)
                         .padding()
                         .frame(width: 300, height: 50)
-                        .background(RoundedRectangle(cornerRadius: 5)
+                        .background(RoundedRectangle(cornerRadius: 5) 
                             .stroke(Color.black))
                         .cornerRadius(10)
                         .border(.red, width: CGFloat(wrongPassword))
                     
-                    TextField("Name", text: $name)
+                    SecureField("Password", text: $password)
                         .padding()
                         .frame(width: 300, height: 50)
                         .background(RoundedRectangle(cornerRadius: 5)
                             .stroke(Color.black))
                         .cornerRadius(10)
-                        .border(.red, width: CGFloat(wrongPassword))
-                        
-                    TextField("Password", text: $password)
-                        .padding()
-                        .frame(width: 300, height: 50)
-                        .background(RoundedRectangle(cornerRadius: 5)
-                            .stroke(Color.black))
-                        .cornerRadius(10)
-                        .border(.red, width: CGFloat(wrongPassword))
-        
+                    
                     NavigationLink(destination: HomeView(), isActive: $showingHomeView){
                         
-                        CustomButtonLogin(title:"Sign Up"){
+                        CustomButtonLogin(title: "Login"){
                             Task {
                                 do {
-                                    let token = try await API.registerUser(name: name, username: username, password: password)
+                                    let token = try await API.login(username: username, password: password)
                                     print(token)
                                     
                                     showingHomeView = true
@@ -81,13 +80,12 @@ struct SignupView: View {
                                     print(error)
                                 }
                             }
+                            
                         }
                         .padding()
                     }
                     
-  
                 }
-                
                 
             }
             .edgesIgnoringSafeArea(.all)
@@ -96,6 +94,7 @@ struct SignupView: View {
     }
     
 }
+
 #Preview {
-    SignupView()
+    loginView()
 }
