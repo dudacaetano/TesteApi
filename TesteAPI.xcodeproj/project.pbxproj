@@ -10,6 +10,9 @@
 		4C2B0E782C7FC5DA005F124B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B0E772C7FC5DA005F124B /* User.swift */; };
 		4C5D281F2C809C7000EA797F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D281E2C809C7000EA797F /* Session.swift */; };
 		4C5D28212C809C8400EA797F /* UserCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D28202C809C8400EA797F /* UserCreate.swift */; };
+		4C5D28232C80B81D00EA797F /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D28222C80B81D00EA797F /* TestView.swift */; };
+		4C5D28252C80B82C00EA797F /* TestView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D28242C80B82C00EA797F /* TestView2.swift */; };
+		4C5D28272C80BDC200EA797F /* splashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D28262C80BDC200EA797F /* splashScreen.swift */; };
 		4C5DC9F92C7CB41F00F68D9F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DC9F82C7CB41F00F68D9F /* APIService.swift */; };
 		4C5DC9FB2C7CB45B00F68D9F /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DC9FA2C7CB45B00F68D9F /* AuthServices.swift */; };
 		4C5DC9FF2C7CB4DA00F68D9F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DC9FE2C7CB4DA00F68D9F /* NetworkError.swift */; };
@@ -32,6 +35,9 @@
 		4C2B0E772C7FC5DA005F124B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4C5D281E2C809C7000EA797F /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		4C5D28202C809C8400EA797F /* UserCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreate.swift; sourceTree = "<group>"; };
+		4C5D28222C80B81D00EA797F /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		4C5D28242C80B82C00EA797F /* TestView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView2.swift; sourceTree = "<group>"; };
+		4C5D28262C80BDC200EA797F /* splashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashScreen.swift; sourceTree = "<group>"; };
 		4C5DC9F82C7CB41F00F68D9F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		4C5DC9FA2C7CB45B00F68D9F /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		4C5DC9FE2C7CB4DA00F68D9F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -69,6 +75,9 @@
 				4CFD0E732C77C22A00F793B9 /* SignupView.swift */,
 				4CFD0E752C77C26600F793B9 /* LoginView.swift */,
 				4CFD0E6D2C77B5C200F793B9 /* HomeView.swift */,
+				4C5D28222C80B81D00EA797F /* TestView.swift */,
+				4C5D28242C80B82C00EA797F /* TestView2.swift */,
+				4C5D28262C80BDC200EA797F /* splashScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,13 +247,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5D28272C80BDC200EA797F /* splashScreen.swift in Sources */,
 				4C5DC9FF2C7CB4DA00F68D9F /* NetworkError.swift in Sources */,
 				4C5D281F2C809C7000EA797F /* Session.swift in Sources */,
 				4C5DC9FB2C7CB45B00F68D9F /* AuthServices.swift in Sources */,
 				4CFD0E6E2C77B5C200F793B9 /* HomeView.swift in Sources */,
 				4CFD0E482C77744D00F793B9 /* ContentView.swift in Sources */,
 				4C6E17362C7EA5790044A4BF /* AuthViewModel.swift in Sources */,
+				4C5D28232C80B81D00EA797F /* TestView.swift in Sources */,
 				4CFD0E462C77744D00F793B9 /* TesteAPIApp.swift in Sources */,
+				4C5D28252C80B82C00EA797F /* TestView2.swift in Sources */,
 				4CFD0E702C77BAF900F793B9 /* WelcomeView.swift in Sources */,
 				4C5DCA102C7CCA5C00F68D9F /* CustomTextField.swift in Sources */,
 				4C5DCA0C2C7CC97D00F68D9F /* CustomButton.swift in Sources */,

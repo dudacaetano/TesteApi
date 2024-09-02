@@ -19,8 +19,8 @@ struct CustomButtonLogin: View {
         }
         .foregroundColor(.white)
         .frame(width: 300, height: 50)
-        .background(Color.blue)
-        .cornerRadius(10)
+        .background(Color.black.gradient)
+        .cornerRadius(3)
     }
 }
 
@@ -38,7 +38,7 @@ struct CustomButtonSignup: View{
         .foregroundColor(.white)
         .frame(width: 300, height: 50)
         .background(Color.gray.opacity(0.5))
-        .cornerRadius(10)
+        .cornerRadius(3)
     }
 }
 
