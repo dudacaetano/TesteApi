@@ -7,9 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		353E56F62C84F4DA00FA5283 /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E56F52C84F4DA00FA5283 /* OnboardView.swift */; };
+		353E56FA2C84F6E700FA5283 /* AllowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E56F92C84F6E700FA5283 /* AllowButton.swift */; };
+		355272B42C81E8CE00FDC8DE /* TaskPerfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272B32C81E8CE00FDC8DE /* TaskPerfil.swift */; };
+		355272B62C81E96200FDC8DE /* FollowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272B52C81E96200FDC8DE /* FollowButton.swift */; };
+		355272B82C81E9B400FDC8DE /* ChatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272B72C81E9B400FDC8DE /* ChatButton.swift */; };
+		355272BA2C81EB0D00FDC8DE /* FeedGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272B92C81EB0D00FDC8DE /* FeedGrid.swift */; };
+		355272BC2C81EB4800FDC8DE /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272BB2C81EB4800FDC8DE /* PerfilView.swift */; };
+		355272BE2C81EBE100FDC8DE /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272BD2C81EBE100FDC8DE /* PostView.swift */; };
+		355272C02C81EC6500FDC8DE /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355272BF2C81EC6500FDC8DE /* UserInfo.swift */; };
+		356697642C85EBB300AB31DE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356697622C85EBB300AB31DE /* LoginView.swift */; };
+		356697652C85EBB300AB31DE /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356697632C85EBB300AB31DE /* WelcomeView.swift */; };
+		35E20FEC2C83BD4400029E48 /* LoginViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E20FEB2C83BD4400029E48 /* LoginViewUI.swift */; };
+		35F487AA2C83556600B6E1FC /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F487A92C83556600B6E1FC /* LogoutButton.swift */; };
+		35F487AC2C8364F800B6E1FC /* WelcomeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F487AB2C8364F800B6E1FC /* WelcomeAnimation.swift */; };
+		35F487AE2C8392B800B6E1FC /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F487AD2C8392B800B6E1FC /* ContinueButton.swift */; };
 		4C2B0E782C7FC5DA005F124B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B0E772C7FC5DA005F124B /* User.swift */; };
 		4C5D281F2C809C7000EA797F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D281E2C809C7000EA797F /* Session.swift */; };
 		4C5D28212C809C8400EA797F /* UserCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D28202C809C8400EA797F /* UserCreate.swift */; };
+		4C5D28232C80B81D00EA797F /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D28222C80B81D00EA797F /* TestView.swift */; };
+		4C5D28252C80B82C00EA797F /* TestView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D28242C80B82C00EA797F /* TestView2.swift */; };
+		4C5D28272C80BDC200EA797F /* splashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D28262C80BDC200EA797F /* splashScreen.swift */; };
 		4C5DC9F92C7CB41F00F68D9F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DC9F82C7CB41F00F68D9F /* APIService.swift */; };
 		4C5DC9FB2C7CB45B00F68D9F /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DC9FA2C7CB45B00F68D9F /* AuthServices.swift */; };
 		4C5DC9FF2C7CB4DA00F68D9F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DC9FE2C7CB4DA00F68D9F /* NetworkError.swift */; };
@@ -23,15 +41,31 @@
 		4CFD0E4A2C77744E00F793B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFD0E492C77744E00F793B9 /* Assets.xcassets */; };
 		4CFD0E4D2C77744E00F793B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFD0E4C2C77744E00F793B9 /* Preview Assets.xcassets */; };
 		4CFD0E6E2C77B5C200F793B9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD0E6D2C77B5C200F793B9 /* HomeView.swift */; };
-		4CFD0E702C77BAF900F793B9 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD0E6F2C77BAF900F793B9 /* WelcomeView.swift */; };
 		4CFD0E742C77C22A00F793B9 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD0E732C77C22A00F793B9 /* SignupView.swift */; };
-		4CFD0E762C77C26600F793B9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD0E752C77C26600F793B9 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		353E56F52C84F4DA00FA5283 /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
+		353E56F92C84F6E700FA5283 /* AllowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowButton.swift; sourceTree = "<group>"; };
+		355272B32C81E8CE00FDC8DE /* TaskPerfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPerfil.swift; sourceTree = "<group>"; };
+		355272B52C81E96200FDC8DE /* FollowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowButton.swift; sourceTree = "<group>"; };
+		355272B72C81E9B400FDC8DE /* ChatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatButton.swift; sourceTree = "<group>"; };
+		355272B92C81EB0D00FDC8DE /* FeedGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedGrid.swift; sourceTree = "<group>"; };
+		355272BB2C81EB4800FDC8DE /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
+		355272BD2C81EBE100FDC8DE /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		355272BF2C81EC6500FDC8DE /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		356697622C85EBB300AB31DE /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		356697632C85EBB300AB31DE /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		35E20FEB2C83BD4400029E48 /* LoginViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewUI.swift; sourceTree = "<group>"; };
+		35F487A92C83556600B6E1FC /* LogoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButton.swift; sourceTree = "<group>"; };
+		35F487AB2C8364F800B6E1FC /* WelcomeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeAnimation.swift; sourceTree = "<group>"; };
+		35F487AD2C8392B800B6E1FC /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
 		4C2B0E772C7FC5DA005F124B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4C5D281E2C809C7000EA797F /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		4C5D28202C809C8400EA797F /* UserCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreate.swift; sourceTree = "<group>"; };
+		4C5D28222C80B81D00EA797F /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		4C5D28242C80B82C00EA797F /* TestView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView2.swift; sourceTree = "<group>"; };
+		4C5D28262C80BDC200EA797F /* splashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashScreen.swift; sourceTree = "<group>"; };
 		4C5DC9F82C7CB41F00F68D9F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		4C5DC9FA2C7CB45B00F68D9F /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		4C5DC9FE2C7CB4DA00F68D9F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -46,9 +80,7 @@
 		4CFD0E492C77744E00F793B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CFD0E4C2C77744E00F793B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4CFD0E6D2C77B5C200F793B9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		4CFD0E6F2C77BAF900F793B9 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		4CFD0E732C77C22A00F793B9 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
-		4CFD0E752C77C26600F793B9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +97,18 @@
 		4C5DC9F02C7CB24700F68D9F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4CFD0E6F2C77BAF900F793B9 /* WelcomeView.swift */,
+				356697622C85EBB300AB31DE /* LoginView.swift */,
+				356697632C85EBB300AB31DE /* WelcomeView.swift */,
 				4CFD0E732C77C22A00F793B9 /* SignupView.swift */,
-				4CFD0E752C77C26600F793B9 /* LoginView.swift */,
 				4CFD0E6D2C77B5C200F793B9 /* HomeView.swift */,
+				4C5D28222C80B81D00EA797F /* TestView.swift */,
+				4C5D28242C80B82C00EA797F /* TestView2.swift */,
+				4C5D28262C80BDC200EA797F /* splashScreen.swift */,
+				355272BB2C81EB4800FDC8DE /* PerfilView.swift */,
+				35F487AB2C8364F800B6E1FC /* WelcomeAnimation.swift */,
+				353E56F52C84F4DA00FA5283 /* OnboardView.swift */,
+				35E20FEB2C83BD4400029E48 /* LoginViewUI.swift */,
+				355272BD2C81EBE100FDC8DE /* PostView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,6 +134,13 @@
 			children = (
 				4C5DCA0B2C7CC97D00F68D9F /* CustomButton.swift */,
 				4C5DCA0F2C7CCA5C00F68D9F /* CustomTextField.swift */,
+				355272B52C81E96200FDC8DE /* FollowButton.swift */,
+				355272B72C81E9B400FDC8DE /* ChatButton.swift */,
+				35F487AD2C8392B800B6E1FC /* ContinueButton.swift */,
+				353E56F92C84F6E700FA5283 /* AllowButton.swift */,
+				35F487A92C83556600B6E1FC /* LogoutButton.swift */,
+				355272B92C81EB0D00FDC8DE /* FeedGrid.swift */,
+				355272BF2C81EC6500FDC8DE /* UserInfo.swift */,
 			);
 			path = ComponentesUI;
 			sourceTree = "<group>";
@@ -126,6 +173,7 @@
 				4C5DC9F12C7CB2B000F68D9F /* Networking */,
 				4CFD0E452C77744D00F793B9 /* TesteAPIApp.swift */,
 				4CFD0E472C77744D00F793B9 /* ContentView.swift */,
+				355272B32C81E8CE00FDC8DE /* TaskPerfil.swift */,
 				4CFD0E492C77744E00F793B9 /* Assets.xcassets */,
 				4CFD0E4B2C77744E00F793B9 /* Preview Content */,
 			);
@@ -238,22 +286,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5D28272C80BDC200EA797F /* splashScreen.swift in Sources */,
 				4C5DC9FF2C7CB4DA00F68D9F /* NetworkError.swift in Sources */,
+				35F487AA2C83556600B6E1FC /* LogoutButton.swift in Sources */,
 				4C5D281F2C809C7000EA797F /* Session.swift in Sources */,
 				4C5DC9FB2C7CB45B00F68D9F /* AuthServices.swift in Sources */,
+				355272B82C81E9B400FDC8DE /* ChatButton.swift in Sources */,
+				355272C02C81EC6500FDC8DE /* UserInfo.swift in Sources */,
+				35F487AE2C8392B800B6E1FC /* ContinueButton.swift in Sources */,
+				353E56FA2C84F6E700FA5283 /* AllowButton.swift in Sources */,
+				355272BC2C81EB4800FDC8DE /* PerfilView.swift in Sources */,
 				4CFD0E6E2C77B5C200F793B9 /* HomeView.swift in Sources */,
 				4CFD0E482C77744D00F793B9 /* ContentView.swift in Sources */,
+				35E20FEC2C83BD4400029E48 /* LoginViewUI.swift in Sources */,
 				4C6E17362C7EA5790044A4BF /* AuthViewModel.swift in Sources */,
+				4C5D28232C80B81D00EA797F /* TestView.swift in Sources */,
 				4CFD0E462C77744D00F793B9 /* TesteAPIApp.swift in Sources */,
-				4CFD0E702C77BAF900F793B9 /* WelcomeView.swift in Sources */,
+				4C5D28252C80B82C00EA797F /* TestView2.swift in Sources */,
+				35F487AC2C8364F800B6E1FC /* WelcomeAnimation.swift in Sources */,
+				355272B42C81E8CE00FDC8DE /* TaskPerfil.swift in Sources */,
 				4C5DCA102C7CCA5C00F68D9F /* CustomTextField.swift in Sources */,
 				4C5DCA0C2C7CC97D00F68D9F /* CustomButton.swift in Sources */,
 				4C5DC9F92C7CB41F00F68D9F /* APIService.swift in Sources */,
+				353E56F62C84F4DA00FA5283 /* OnboardView.swift in Sources */,
+				355272BE2C81EBE100FDC8DE /* PostView.swift in Sources */,
+				355272B62C81E96200FDC8DE /* FollowButton.swift in Sources */,
 				4C6E17382C7EA61D0044A4BF /* APIError.swift in Sources */,
 				4C5DCA072C7CB5C700F68D9F /* keychainManager.swift in Sources */,
 				4C5D28212C809C8400EA797F /* UserCreate.swift in Sources */,
-				4CFD0E762C77C26600F793B9 /* LoginView.swift in Sources */,
+				356697652C85EBB300AB31DE /* WelcomeView.swift in Sources */,
+				355272BA2C81EB0D00FDC8DE /* FeedGrid.swift in Sources */,
 				4CFD0E742C77C22A00F793B9 /* SignupView.swift in Sources */,
+				356697642C85EBB300AB31DE /* LoginView.swift in Sources */,
 				4C2B0E782C7FC5DA005F124B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +452,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TesteAPI/Preview Content\"";
+				DEVELOPMENT_TEAM = 693FMKNTFD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -416,6 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TesteAPI/Preview Content\"";
+				DEVELOPMENT_TEAM = 693FMKNTFD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

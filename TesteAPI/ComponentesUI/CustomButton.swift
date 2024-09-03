@@ -15,12 +15,18 @@ struct CustomButtonLogin: View {
     var body: some View {
         Button(action: action){
             Text(title)
-                .fontWeight(.semibold)
+                
         }
-        .foregroundColor(.white)
+        
+        .foregroundColor(.textboard)
+        .frame(width: 345, height: 46)
+        .background(Color.boardbutton)
+        .cornerRadius(4)
+        .padding(.bottom, 20)
+        /*.foregroundColor(.white)
         .frame(width: 300, height: 50)
-        .background(Color.blue)
-        .cornerRadius(10)
+        .background(Color.black.gradient)
+        .cornerRadius(3)*/
     }
 }
 
@@ -33,12 +39,11 @@ struct CustomButtonSignup: View{
     var body: some View {
         Button(action: action){
             Text(title)
-                .fontWeight(.semibold)
         }
-        .foregroundColor(.white)
-        .frame(width: 300, height: 50)
-        .background(Color.gray.opacity(0.5))
-        .cornerRadius(10)
+        .background(.black)
+        .font(.system(size: 16))
+        .fontWeight(.medium)
+        .padding([.top], -10)
     }
 }
 

@@ -8,8 +8,47 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @Environment(\.dismiss) var dismiss
+    
+    @AppStorage("userToken") var token = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        TabView{
+            
+            PostView()
+                 .tabItem {
+                    Image(systemName: "line.3.horizontal.circle.fill")
+                    Text("Feed")
+                }
+            TestView2()
+                .tabItem {
+                    Image(systemName: "plus.circle")
+                    Text("Publicar")
+                }
+            TestView2()
+                .tabItem {
+                    Image(systemName: "cart.fill")
+                    Text("Shop")
+                }
+            PerfilView()
+                .tabItem {
+                    Image(systemName: "person.crop.circle")
+                    Text("Perfil")
+                }
+            
+        }
+        .accentColor(.red)
+        .navigationBarBackButtonHidden()
+        .onChange(of: token) {
+            if token.isEmpty {
+                // logout
+                dismiss()
+            }
+        }
+        
+       
     }
 }
 
