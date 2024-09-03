@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @Environment(\.dismiss) var dismiss
+    
+    @AppStorage("userToken") var token = ""
+    
     var body: some View {
         
         TabView{
             
-            TestView()
+            PostView()
                  .tabItem {
                     Image(systemName: "line.3.horizontal.circle.fill")
                     Text("Feed")
@@ -27,7 +32,7 @@ struct HomeView: View {
                     Image(systemName: "cart.fill")
                     Text("Shop")
                 }
-            TestView2()
+            PerfilView()
                 .tabItem {
                     Image(systemName: "person.crop.circle")
                     Text("Perfil")
@@ -35,6 +40,13 @@ struct HomeView: View {
             
         }
         .accentColor(.red)
+        .navigationBarBackButtonHidden()
+        .onChange(of: token) {
+            if token.isEmpty {
+                // logout
+                dismiss()
+            }
+        }
         
        
     }
