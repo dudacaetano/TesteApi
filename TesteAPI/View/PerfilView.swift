@@ -9,6 +9,7 @@ import SwiftUI
 import UIKit
 
 struct PerfilView: View {
+    
     @State var selected = 1
     
     var body: some View {
@@ -62,6 +63,7 @@ struct PerfilView: View {
                 for: .selected
             )
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

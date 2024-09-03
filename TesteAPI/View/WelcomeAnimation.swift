@@ -68,7 +68,7 @@ struct OnboardingView: View {
     @State private var isOnboardingComplete = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 VStack(alignment: .leading, spacing: 10) {                    
                     Text("BEM-VINDO AO FLIPFLOP, ESTAMOS FELIZES\nEM VER A COMUNIDADE CRESCENDO")

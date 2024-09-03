@@ -8,32 +8,44 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @Environment(\.dismiss) var dismiss
+    
+    @AppStorage("userToken") var token = ""
+    
     var body: some View {
         TabView{
-                    
-                    PostView()
-                         .tabItem {
-                            Image(systemName: "line.3.horizontal.circle.fill")
-                            Text("Feed")
-                        }
-                    UploadPostView()
-                        .tabItem {
-                            Image(systemName: "plus.circle")
-                            Text("Publicar")
-                        }
-                    TestView2()
-                        .tabItem {
-                            Image(systemName: "cart.fill")
-                            Text("Shop")
-                        }
-                    PerfilView()
-                        .tabItem {
-                            Image(systemName: "person.crop.circle")
-                            Text("Perfil")
-                        }
-                    
+            
+            PostView()
+                 .tabItem {
+                    Image(systemName: "line.3.horizontal.circle.fill")
+                    Text("Feed")
                 }
-                .accentColor(.red)
+            TestView2()
+                .tabItem {
+                    Image(systemName: "plus.circle")
+                    Text("Publicar")
+                }
+            TestView2()
+                .tabItem {
+                    Image(systemName: "cart.fill")
+                    Text("Shop")
+                }
+            PerfilView()
+                .tabItem {
+                    Image(systemName: "person.crop.circle")
+                    Text("Perfil")
+                }
+            
+        }
+        .accentColor(.red)
+        .navigationBarBackButtonHidden()
+        .onChange(of: token) {
+            if token.isEmpty {
+                // logout
+                dismiss()
+            }
+        }
        
     }
 }
