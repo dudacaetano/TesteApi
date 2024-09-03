@@ -42,6 +42,13 @@
 		4CFD0E4D2C77744E00F793B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFD0E4C2C77744E00F793B9 /* Preview Assets.xcassets */; };
 		4CFD0E6E2C77B5C200F793B9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD0E6D2C77B5C200F793B9 /* HomeView.swift */; };
 		4CFD0E742C77C22A00F793B9 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD0E732C77C22A00F793B9 /* SignupView.swift */; };
+		9045809E2C86B2BF0032FEAC /* PostHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9045809D2C86B2BF0032FEAC /* PostHomeModel.swift */; };
+		904580A22C86B3F60032FEAC /* PosCustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904580A12C86B3F60032FEAC /* PosCustomPicker.swift */; };
+		904580A42C86B4640032FEAC /* VideoPlayerOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904580A32C86B4640032FEAC /* VideoPlayerOverlayView.swift */; };
+		904580A62C86B4C50032FEAC /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904580A52C86B4C50032FEAC /* PostViewModel.swift */; };
+		904580A82C86B5E70032FEAC /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904580A72C86B5E70032FEAC /* PlayerView.swift */; };
+		904580AA2C86BB840032FEAC /* MultipartRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904580A92C86BB840032FEAC /* MultipartRequest.swift */; };
+		904580AC2C86BBC30032FEAC /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904580AB2C86BBC30032FEAC /* UploadPostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +88,13 @@
 		4CFD0E4C2C77744E00F793B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4CFD0E6D2C77B5C200F793B9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4CFD0E732C77C22A00F793B9 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		9045809D2C86B2BF0032FEAC /* PostHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHomeModel.swift; sourceTree = "<group>"; };
+		904580A12C86B3F60032FEAC /* PosCustomPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosCustomPicker.swift; sourceTree = "<group>"; };
+		904580A32C86B4640032FEAC /* VideoPlayerOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerOverlayView.swift; sourceTree = "<group>"; };
+		904580A52C86B4C50032FEAC /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		904580A72C86B5E70032FEAC /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		904580A92C86BB840032FEAC /* MultipartRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartRequest.swift; sourceTree = "<group>"; };
+		904580AB2C86BBC30032FEAC /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +123,7 @@
 				353E56F52C84F4DA00FA5283 /* OnboardView.swift */,
 				35E20FEB2C83BD4400029E48 /* LoginViewUI.swift */,
 				355272BD2C81EBE100FDC8DE /* PostView.swift */,
+				904580AB2C86BBC30032FEAC /* UploadPostView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -141,6 +156,9 @@
 				35F487A92C83556600B6E1FC /* LogoutButton.swift */,
 				355272B92C81EB0D00FDC8DE /* FeedGrid.swift */,
 				355272BF2C81EC6500FDC8DE /* UserInfo.swift */,
+				904580A12C86B3F60032FEAC /* PosCustomPicker.swift */,
+				904580A32C86B4640032FEAC /* VideoPlayerOverlayView.swift */,
+				904580A72C86B5E70032FEAC /* PlayerView.swift */,
 			);
 			path = ComponentesUI;
 			sourceTree = "<group>";
@@ -194,6 +212,8 @@
 				4C2B0E772C7FC5DA005F124B /* User.swift */,
 				4C5D281E2C809C7000EA797F /* Session.swift */,
 				4C5D28202C809C8400EA797F /* UserCreate.swift */,
+				9045809D2C86B2BF0032FEAC /* PostHomeModel.swift */,
+				904580A52C86B4C50032FEAC /* PostViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,6 +232,7 @@
 				4C5DC9F82C7CB41F00F68D9F /* APIService.swift */,
 				4C5DC9FA2C7CB45B00F68D9F /* AuthServices.swift */,
 				4C6E17372C7EA61D0044A4BF /* APIError.swift */,
+				904580A92C86BB840032FEAC /* MultipartRequest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -286,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9045809E2C86B2BF0032FEAC /* PostHomeModel.swift in Sources */,
 				4C5D28272C80BDC200EA797F /* splashScreen.swift in Sources */,
 				4C5DC9FF2C7CB4DA00F68D9F /* NetworkError.swift in Sources */,
 				35F487AA2C83556600B6E1FC /* LogoutButton.swift in Sources */,
@@ -295,16 +317,21 @@
 				355272C02C81EC6500FDC8DE /* UserInfo.swift in Sources */,
 				35F487AE2C8392B800B6E1FC /* ContinueButton.swift in Sources */,
 				353E56FA2C84F6E700FA5283 /* AllowButton.swift in Sources */,
+				904580A62C86B4C50032FEAC /* PostViewModel.swift in Sources */,
 				355272BC2C81EB4800FDC8DE /* PerfilView.swift in Sources */,
 				4CFD0E6E2C77B5C200F793B9 /* HomeView.swift in Sources */,
 				4CFD0E482C77744D00F793B9 /* ContentView.swift in Sources */,
 				35E20FEC2C83BD4400029E48 /* LoginViewUI.swift in Sources */,
 				4C6E17362C7EA5790044A4BF /* AuthViewModel.swift in Sources */,
 				4C5D28232C80B81D00EA797F /* TestView.swift in Sources */,
+				904580AA2C86BB840032FEAC /* MultipartRequest.swift in Sources */,
+				904580A82C86B5E70032FEAC /* PlayerView.swift in Sources */,
 				4CFD0E462C77744D00F793B9 /* TesteAPIApp.swift in Sources */,
 				4C5D28252C80B82C00EA797F /* TestView2.swift in Sources */,
+				904580AC2C86BBC30032FEAC /* UploadPostView.swift in Sources */,
 				35F487AC2C8364F800B6E1FC /* WelcomeAnimation.swift in Sources */,
 				355272B42C81E8CE00FDC8DE /* TaskPerfil.swift in Sources */,
+				904580A42C86B4640032FEAC /* VideoPlayerOverlayView.swift in Sources */,
 				4C5DCA102C7CCA5C00F68D9F /* CustomTextField.swift in Sources */,
 				4C5DCA0C2C7CC97D00F68D9F /* CustomButton.swift in Sources */,
 				4C5DC9F92C7CB41F00F68D9F /* APIService.swift in Sources */,
@@ -319,6 +346,7 @@
 				4CFD0E742C77C22A00F793B9 /* SignupView.swift in Sources */,
 				356697642C85EBB300AB31DE /* LoginView.swift in Sources */,
 				4C2B0E782C7FC5DA005F124B /* User.swift in Sources */,
+				904580A22C86B3F60032FEAC /* PosCustomPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
