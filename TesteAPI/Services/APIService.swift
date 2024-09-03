@@ -47,7 +47,7 @@ enum API {
         
         let create = User.Create(name: name, username: username, password: password)
         
-        let url = baseURL.appending(path: "users") // http://127.0.0.1:8080/users
+        let url = baseURL.appending(path: "users")
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -119,6 +119,11 @@ enum API {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
         let (data, response) = try await URLSession.shared.data(for: request)
+        
+        // Verificar o código de status da resposta
+        if let httpResponse = response as? HTTPURLResponse {
+            print("Status code: \(httpResponse.statusCode)")
+        }
 
         try check(data: data, response: response)
 
@@ -138,6 +143,18 @@ enum API {
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 class APIService {
     private let baseURL = "http://127.0.0.1:8080"

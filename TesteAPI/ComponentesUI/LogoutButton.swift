@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct LogoutButton: View {
+    
+    var action: () -> Void
+    
     var body: some View {
-        Button{
+        
+        Button(action: action){
+            Image(systemName: "rectangle.portrait.and.arrow.forward")
+                .foregroundStyle(.symbols)
+            
+        }
+        .controlSize(.small)
+        .padding(10)
+        .background(.button)
+        .cornerRadius(7)
+        
+        
+        /*Button(action: action){
            // acao
         } label: {
             Image(systemName: "rectangle.portrait.and.arrow.forward")
@@ -19,10 +34,12 @@ struct LogoutButton: View {
         .controlSize(.small)
         .padding(10)
         .background(.button)
-        .cornerRadius(7)
+        .cornerRadius(7)*/
     }
 }
 
 #Preview {
-    LogoutButton()
+    LogoutButton{
+        print("Button tapped")
+    }
 }

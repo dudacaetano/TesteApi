@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct UserInfo: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    // @Binding var showingLoginViewUI: Bool
+    
+    var name: String = UserDefaults.standard.string(forKey: "userName") ?? "Usuário"
+    
     var body: some View {
         HStack{
             Image(.image1)
@@ -19,7 +25,7 @@ struct UserInfo: View {
             Group{
                 VStack(alignment: .leading) {
                     VStack (alignment: .leading, spacing: 5) {
-                        Text("Nome")
+                        Text("\(name)")
                             .font(.title3)
                             .fontWeight(.bold)
                             .foregroundStyle(.vermelho)
@@ -40,7 +46,23 @@ struct UserInfo: View {
                     HStack (spacing: 5) {
                         FollowButton()
                         ChatButton()
-                        LogoutButton()
+                        LogoutButton() {
+                            Task{
+                                do{
+                                    if let token = UserDefaults.standard.string(forKey: "userToken") {
+                                        try await API.logout(with: token)
+                                        UserDefaults.standard.removeObject(forKey: "userToken")
+                                        print("Logout realizado com sucesso")
+                                        
+                                        
+                                        //fechar a PerfilView e voltar para tela login
+                                        presentationMode.wrappedValue.dismiss()
+                                    }
+                                } catch{
+                                    print("Erro ao tentar realizar logout: \(error)")
+                                }
+                            }
+                        }
                     }
                     
                 }
