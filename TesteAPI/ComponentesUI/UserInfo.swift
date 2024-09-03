@@ -9,8 +9,7 @@ import SwiftUI
 
 struct UserInfo: View {
     
-    @Environment(\.presentationMode) var presentationMode
-    // @Binding var showingLoginViewUI: Bool
+    @AppStorage("userToken") var token: String = ""
     
     var name: String = UserDefaults.standard.string(forKey: "userName") ?? "Usuário"
     
@@ -49,14 +48,10 @@ struct UserInfo: View {
                         LogoutButton() {
                             Task{
                                 do{
-                                    if let token = UserDefaults.standard.string(forKey: "userToken") {
+                                    if !token.isEmpty {
                                         try await API.logout(with: token)
-                                        UserDefaults.standard.removeObject(forKey: "userToken")
+                                        token = ""
                                         print("Logout realizado com sucesso")
-                                        
-                                        
-                                        //fechar a PerfilView e voltar para tela login
-                                        presentationMode.wrappedValue.dismiss()
                                     }
                                 } catch{
                                     print("Erro ao tentar realizar logout: \(error)")

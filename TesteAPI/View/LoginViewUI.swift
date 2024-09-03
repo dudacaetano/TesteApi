@@ -20,7 +20,6 @@ struct LoginViewUI: View {
     @State private var showingSignupView = false
     
     var body: some View {
-        NavigationView{
             ZStack {
                     VStack(alignment: .leading, spacing: 10){
                         Text("FlipFlop/Login")
@@ -67,35 +66,37 @@ struct LoginViewUI: View {
                         
                         VStack{
                             
-                            NavigationLink(destination: HomeView(), isActive: $showingHomeView){
-                                
-                                Button("Login"){
-                                    Task {
-                                        do {
-                                            let token = try await API.login(username: username, password: password)
-                                            
-                                            //buscar o nome do user apos o login
-                                            let user = try await API.me(with:token)
-                                            
-                                            //salvar o nome no userDefaults
-                                            UserDefaults.standard.set(user.name, forKey:"userName")
-                                            
-                                            //salvar o token no userDefaults
-                                            UserDefaults.standard.set(token, forKey: "userToken")
-                                            
-                                            print(token)
-                                            
-                                            showingHomeView = true
-                                        } catch {
-                                            print(error)
-                                        }
+                            Button {
+                                Task {
+                                    do {
+                                        let token = try await API.login(username: username, password: password)
+                                        
+                                        //buscar o nome do user apos o login
+                                        let user = try await API.me(with:token)
+                                        
+                                        //salvar o nome no userDefaults
+                                        UserDefaults.standard.set(user.name, forKey:"userName")
+                                        
+                                        //salvar o token no userDefaults
+                                        UserDefaults.standard.set(token, forKey: "userToken")
+                                        
+                                        print(token)
+                                        
+                                        showingHomeView = true
+                                    } catch {
+                                        print(error)
                                     }
                                 }
-                                .foregroundColor(.textboard)
-                                .frame(width: 345, height: 46)
-                                .background(Color.boardbutton)
-                                .cornerRadius(4)
-                                .padding(.bottom, 20)
+                            } label: {
+                                Text("Login")
+                                    .foregroundColor(.textboard)
+                                    .frame(width: 345, height: 46)
+                                    .background(Color.boardbutton)
+                                    .cornerRadius(4)
+                                    .padding(.bottom, 20)
+                            }
+                            .navigationDestination(isPresented: $showingHomeView) {
+                                HomeView()
                             }
                             
                             Text("Não é membro da comunidade?")
@@ -115,7 +116,6 @@ struct LoginViewUI: View {
             }
             .navigationBarBackButtonHidden(true)
             .navigationBarHidden(true)
-        }
     }
 }
 

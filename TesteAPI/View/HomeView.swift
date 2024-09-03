@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @Environment(\.dismiss) var dismiss
+    
+    @AppStorage("userToken") var token = ""
+    
     var body: some View {
         
         TabView{
@@ -35,6 +40,13 @@ struct HomeView: View {
             
         }
         .accentColor(.red)
+        .navigationBarBackButtonHidden()
+        .onChange(of: token) {
+            if token.isEmpty {
+                // logout
+                dismiss()
+            }
+        }
         
        
     }

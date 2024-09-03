@@ -12,7 +12,7 @@ import Foundation
 
 enum API {
     
-    static let baseURL = URL(string: "http://127.0.0.1:8080")!
+    static let baseURL = URL(string: "http://10.45.53.219:8080")!
     
     static func fetch(token: String) async throws -> User {
         let url = baseURL.appendingPathComponent("user/me")
